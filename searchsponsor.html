@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Sponsorships - Sponsorwala</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #791414, #cc1029);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Search Container */
+        .search-container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .search-container h1 {
+            text-align: center;
+            color: #9b0f0f;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Form Styles */
+        .search-container form label {
+            display: block;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        .search-container form input,
+        .search-container form select {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        /* Button Styling */
+        .search-container form button {
+            width: 100%;
+            padding: 0.8rem;
+            background: #a01111;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .search-container form button:hover {
+            background: #007aff;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .search-container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Find Sponsorships</h1>
+        <form>
+            <!-- Industry Filter -->
+            <label for="industry">Industry</label>
+            <select id="industry">
+                <option value="">Select Industry</option>
+                <option value="technology">Technology</option>
+                <option value="fashion">Fashion</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="sports">Sports</option>
+                <option value="education">Education</option>
+                <option value="finance">Finance</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Event Type Filter -->
+            <label for="event-type">Event Type</label>
+            <select id="event-type">
+                <option value="">Select Event Type</option>
+                <option value="conference">Conference</option>
+                <option value="workshop">Workshop</option>
+                <option value="competition">Competition</option>
+                <option value="festival">Festival</option>
+                <option value="product-launch">Product Launch</option>
+            </select>
+
+            <!-- Budget Filter -->
+            <label for="budget">Budget Range ($)</label>
+            <input type="number" id="budget" placeholder="Enter your budget range (e.g., 5000)">
+
+            <!-- Location Filter -->
+            <label for="location">Location / Country</label>
+            <input type="text" id="location" placeholder="Enter preferred location or country">
+
+            <!-- Search Button -->
+            <button type="submit">Search Sponsorships</button>
+        </form>
+    </div>
+</body>
+</html>

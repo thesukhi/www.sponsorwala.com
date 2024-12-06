@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship Platform - Choose Registration</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6b2211, #e22359);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .container h1 {
+            color: #ff5733;
+            margin-bottom: 2rem;
+        }
+
+        /* Buttons */
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .options a {
+            text-decoration: none;
+            background: #ff5733;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .options a:hover {
+            background: #ffbd69;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            .options a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Join the Sponsorwala</h1>
+        <div class="options">
+            <a href="sponsor-registration.html">Register as Sponsor</a>
+            <a href="customer-registration.html">Searching for Sponsor</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Registration - Sponsorship Platform</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff5733, #c70039);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        /* Registration Container */
+        .registration-container {
+            width: 90%;
+            max-width: 600px;
+            background: white;
+            color: #333;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .registration-container h1 {
+            text-align: center;
+            color: #ff5733;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Form Styles */
+        .registration-container form label {
+            display: block;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        .registration-container form input,
+        .registration-container form select,
+        .registration-container form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .registration-container form textarea {
+            resize: none;
+        }
+
+        /* Button Styling */
+        .registration-container form button {
+            width: 100%;
+            padding: 0.8rem;
+            background: #ff5733;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .registration-container form button:hover {
+            background: #ffbd69;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .registration-container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Sponsor Registration</h1>
+        <form>
+            <!-- Company Name -->
+            <label for="company-name">Company Name / Brand Name</label>
+            <input type="text" id="company-name" placeholder="Enter your company or brand name" required>
+
+            <!-- Industry -->
+            <label for="industry">Industry</label>
+            <select id="industry" required>
+                <option value="">Select your industry</option>
+                <option value="technology">Technology</option>
+                <option value="fashion">Fashion</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="sports">Sports</option>
+                <option value="education">Education</option>
+                <option value="finance">Finance</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Location -->
+            <label for="location">Location / Country</label>
+            <input type="text" id="location" placeholder="Enter your location or country" required>
+
+            <!-- Sponsorship Types -->
+            <label for="sponsorship-types">Types of Sponsorship</label>
+            <select id="sponsorship-types" multiple required>
+                <option value="event">Event Sponsorship</option>
+                <option value="digital">Digital Sponsorship</option>
+                <option value="sports">Sports Sponsorship</option>
+                <option value="media">Media Sponsorship</option>
+                <option value="product">Product Sponsorship</option>
+            </select>
+
+            <!-- Budget Range -->
+            <label for="budget-range">Budget Range ($)</label>
+            <input type="number" id="budget-range" placeholder="Enter your budget range (e.g., 10000)" required>
+
+            <!-- Sponsorship Description -->
+            <label for="description">Sponsorship Description</label>
+            <textarea id="description" rows="5" placeholder="Provide a detailed description of your sponsorship offerings"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Register as Sponsor</button>
+        </form>
+    </div>
+</body>
+</html>

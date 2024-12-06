@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship Hub</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            color: #222;
+        }
+        p {
+            margin: 0.5rem 0;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(45deg, #ff5733, #c70039);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .btn-header {
+            padding: 0.5rem 1rem;
+            background: white;
+            color: #ff5733;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn-header:hover {
+            background: #ffbd69;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: color #ff5733;
+            color: rgb(238, 14, 14);
+            text-align: center;
+            padding: 4rem 2rem;
+
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .btn-cta {
+            background: #ff5733;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        .btn-cta:hover {
+            background: #ffbd69;
+            color: #333;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 2rem;
+            background: #fff;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .feature-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background: linear-gradient(45deg, #da1121, #2575fc);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .feature-item h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Sponsorwala</div>
+        <nav class="navbar">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#signup" class="btn-header">Sign Up</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Empowering Connections</h1>
+        <p>Your one-stop solution for hiring and offering sponsorships.</p>
+        <a href="#get-started" class="btn-cta">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Our Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Global Network</h3>
+                <p>Connect with sponsors and creators worldwide.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Secure Payments</h3>
+                <p>Fast and safe transaction handling for every deal.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Custom Campaigns</h3>
+                <p>Create, share, and manage your sponsorship campaigns.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Sponsorwala.com All rights reserved.</p>
+    </footer>
+</body>
+</html>
